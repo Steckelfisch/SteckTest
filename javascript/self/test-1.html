@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+
+var a = { name: "a",
+          fun:  function() { return this }
+        }
+
+alert(a.fun());
+var output = '';
+var input = a.fun();
+for (property in input) {
+  output += property + ': ' + input[property]+'; ';
+}
+alert(output);
+
+
+
+
+
+
+var bFunc = function() { return this };
+//console.log(bFunc());
+
+var b = {name: "b",
+         fun:  bFunc
+        }
+
+alert(b.fun()); // differs from expectation on page 32 (JavaScrpt, Functional Programming)
+var output = '';
+var input = b.fun();
+for (property in input) {
+  output += property + ': ' + input[property]+'; ';
+}
+alert(output);
+
+</script>
+<body>
+</body>
+</html>
