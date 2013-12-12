@@ -1,4 +1,4 @@
-Project waarmee ik verschillende digne op verschillende omgevingen kan uitroberen en testen.
+Project waarmee ik verschillende dingen op verschillende omgevingen kan uitproberen en testen.
 
 
 Ook spelen met git komt zo aan de orde.
